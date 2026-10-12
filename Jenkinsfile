@@ -42,7 +42,7 @@ pipeline {
                         bat "docker stop ${CONTAINER_NAME} || exit 0"
                         bat "docker rm ${CONTAINER_NAME} || exit 0"
                         
-                        bat "docker run -d -p 8080:8080 --name ${CONTAINER_NAME} ${DOCKER_IMAGE}:latest"
+                        bat "docker run -d -p 8081:8080 --name ${CONTAINER_NAME} ${DOCKER_IMAGE}:latest"
                     }
                 }
             }
